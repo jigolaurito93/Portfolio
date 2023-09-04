@@ -1,0 +1,15 @@
+/* =========================
+Variables 
+===========================*/
+
+:root {
+    --clr-primary-1: #35155D;
+    --clr-primary-2: #512B81;
+    --clr-primary-3: #4477CE;
+    --clr-primary-4: #8CABFF;
+
+    --clr-white: #fff;
+
+    --spacing: 0.25rem;
+}
+
