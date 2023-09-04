@@ -9,7 +9,60 @@ Variables
     --clr-primary-4: #8CABFF;
 
     --clr-white: #fff;
+    /* font family */
+    --ff-primary: "Lora", sans-serif;
 
     --spacing: 0.25rem;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--ff-primary);
+}
+
+ul {
+    text-transform: capitalize;
+    list-style: none;
+    padding: .75rem 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    font-family: var(--ff-primary);
+    font-weight: 600;
+    color: black;
+    border: 1px solid black;
+
+}
+
+.navbar {
+    display: flex;
+    border: 1px solid black;
+}
+
+.nav-logo {
+    border: 1px solid black;
+    width: 45%;
+}
+
+.logo-name {
+    padding: 1.5rem;
+}
+
+.nav-list {
+    display: flex;
+    border: 1px solid black;
+    width: 55%;
+}
+.nav-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid black;
+}
+
+.nav-item {
+    margin: 1.5rem 2.5rem;
+}
