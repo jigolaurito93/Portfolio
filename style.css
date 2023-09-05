@@ -1,3 +1,9 @@
+/*=================
+ Fonts 
+ ==================*/
+
+ @import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
+
 /* =========================
 Variables 
 ===========================*/
@@ -10,7 +16,7 @@ Variables
 
     --clr-white: #fff;
     /* font family */
-    --ff-primary: "Lora", sans-serif;
+    --ff-primary: "Lato", sans-serif;
     --transition: all 0.3s linear;
     --spacing: 0.25rem;
     --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -23,11 +29,22 @@ Variables
     font-family: var(--ff-primary);
 }
 
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--ff-primary);
+}
+
 li {
     list-style-type: none;
 }
 a {
     text-decoration: none;
+}
+
+img {
+    border-radius: 80%;
 }
 
 .navbar {
@@ -116,17 +133,197 @@ a {
     .nav-link {
         padding: 0 0;
         margin-right: 1.9rem;
-        
+
     }
 
     .nav-link:hover {
         padding: 0 0;
         background-color: transparent;
     }
+}
+
+/* HERO */
+
+
+
+#hero {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2rem;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 0;
+}
+
+.hero-text-container {
+    width: 70vw;
+}
+
+.hero-h1 {
+    font-size: 3rem;
+}
+
+.hero-p1{
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.hero-p2 {
+    letter-spacing: .10rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+    width: auto;
+    padding-top: 1rem;
+}
+
+button {
+    padding: 1rem;
+    margin: 3rem .40rem 0 .40rem;
+    font-family: var(--ff-primary);
+    font-size: .80rem;
+    background-color: transparent;
+    border: .13rem solid black;
+    font-weight: 600;
+    border-radius: 2.9rem;
+    cursor: pointer;
+    transition: var(--transition);
 
 }
 
-.nbd {
-    margin-top: 20rem;
-
+button:hover{
+    background-color: #4477CE;
+    color: white;
+    transform: scale(1.1);
 }
+
+.hero-img-container{
+    margin-top: 5rem;
+}
+img{
+    width: 60vw;
+    height: auto;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 20vh;
+}
+
+
+.icons {
+    display: flex;
+    width: 60vw;
+    justify-content: space-evenly;
+}
+
+.icon {
+    font-size: 3rem;
+}
+/* .icon {
+    font-size: 3rem;
+    margin: 2rem 5rem;
+    transition: var(--transition);
+    cursor: pointer;
+} */
+
+.icon:hover{
+    transform: scale(1.2)
+}
+
+
+.icons1 {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    
+    .hero-img-container{
+        margin-top: 10rem;
+    }
+    img {
+        width: 50vw;
+        height: auto;
+    }
+    
+    .btn {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Expand Navbar */
+@media screen and (min-width: 992px) {
+    #hero {
+        width: 70vw;
+        flex-direction: row;
+        margin: auto;
+        height: 80vh;
+    }
+
+    .hero-text-container{
+        height: auto;
+        width: rem;
+        padding-top: 8rem;
+    }
+    .hero-h1{
+        font-size: 3.6rem;
+    }
+    .hero-p2{
+        font-size: 1.3rem;
+        max-width: 560px;
+    }
+    .hero-img-container{
+
+        margin-top: 0;
+    }
+    img {
+        width: 30vw;
+    }
+
+    .icon-container{
+        display: flex;
+        justify-content: center;
+        height: 20vh;
+        
+    }
+
+    .icons{
+        display: flex;
+        justify-content: space-evenly;
+        width: 30vw;
+    }
+    .icon {
+        font-size: 3rem;
+        margin: 0 1rem;
+    }
+
+    .icons2{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    #hero {
+        margin-top: 4rem;
+        width: 60vw;
+        padding: 2rem;
+        height: 73vh;
+    }
+    .icons {
+        height: 11vh;
+        align-items: center;
+    }
+    .icon:hover {
+        cursor: pointer;
+    }
+
+    img{
+        width: 30vw;
+        padding-right: 5rem;
+    }
+}
+
+
+/* END OF HERO */
