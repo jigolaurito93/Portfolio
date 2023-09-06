@@ -452,7 +452,7 @@ button:hover{
     }
 
     .chef-photo {
-        width: 20vw;
+        width: 23vw;
     }
 
 
@@ -479,6 +479,7 @@ button:hover{
 
 .tab-links {
     cursor: pointer;
+    transition: var(--transition);
 }
 
 #show {
@@ -488,5 +489,14 @@ button:hover{
 
 #hide{
     display: none;
+}
+
+
+
+.active-link {
+    padding-bottom: .25rem;
+    border-bottom: 3px solid black;
+    transform: scale(1.1);
+    transition: var(--transition);
 }
 /* END OF ABOUT ME */
