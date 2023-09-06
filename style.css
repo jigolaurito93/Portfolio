@@ -500,3 +500,100 @@ button:hover{
     transition: var(--transition);
 }
 /* END OF ABOUT ME */
+
+
+/* PROJECTS */
+.projects{
+    margin-top: 4rem;
+    width: 100vw;
+}
+.project-h1{
+    font-size: 4rem;
+    margin-left: 3rem;
+    margin-bottom: 3rem;
+}
+
+.project-cards {
+    width: 85vw;
+    margin: 1rem auto;
+}
+.project-card, .content-text {
+    text-align: center;
+}
+
+.project-img, .content-text {
+    transition: var(--transition);
+    border-radius: 3px;
+}
+
+.project-card{
+    position: relative;
+    margin: 1.1rem;
+    max-width: 31%;
+    float: left;
+    cursor:pointer;
+}
+
+.project-card img{
+    width: 100%;
+    margin-bottom: -4px;
+}
+
+.project-card .content-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    opacity: 0;
+}
+
+.content-text h2 {
+   padding-top: 35%;
+   font-size: 40px;
+}
+
+.content-text p {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+
+.project-card:hover .content-text {
+    opacity: 1;
+}   
+
+.project-card:hover img {
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+}
+
+.more-projects {
+    text-align: center;
+    width: 100%;
+}
+
+.see-more{
+    font-size: 1.5rem;
+    width: 10%;
+}
+
+@media screen and (max-width: 1150px) {
+    .project-card{
+        max-width: 48%;
+        margin: 1%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .project-card{
+        float: none;
+        max-width: 80%;
+        margin: 3rem auto;
+    }
+    .see-more{
+        width: 40%;
+    }
+}
+/* END OF PROJECTS */
